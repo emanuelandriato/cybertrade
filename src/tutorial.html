@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  
+    Document Title
+    ============================================= -->
+    <title>Cybertrade</title>
+    <!--  
+    Favicons
+    ============================================= -->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/favicon32x32.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/favicon32x32.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/favicon32x32.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/favicon32x32.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/favicon32x32.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/favicon32x32.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/favicon32x32.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/favicon32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/favicon32x32.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon32x32.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/images/favicons/favicon32x32.png">
+	<meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    ============================================= -->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+	</head>
+	<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader"><div class="loader">Loading...</div></div>
+	
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">		 
+        <div class="container">
+        <div class="navbar-header">		
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span><span class="icon-bar"></span>
+			<span class="icon-bar"></span></button>
+			<a class="navbar-brand" href="index.html">Cybertrade</a>
+        </div>
+        <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">		      
+              <li><a href="index.html">Home</a></li>
+			  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Expert Advisor</a>
+			    <ul class="dropdown-menu">      					
+					<li><a href="https://www.mql5.com/pt/market/product/80166" target="_blank">Download</a></li>
+					<li><a href="indicators.html">Indicators</a></li> 
+					<li><a href="parameters.html">Parameters</a></li>  
+					<li><a href="tutorial.html">Tutorial</a></li>
+                </ul>
+            </ul>
+        </div>
+        </div>
+		</nav>	  
+		<!-- Conteudo
+		============================================= -->       					
+		<!-- SESSION TITLE -->
+		<section class="module bg-dark-30 about-page-header" data-background="assets/images/title/indicators1920x1280.png">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h1 class="module-title font-alt mb-0">Sign Creation Tutorial</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+		
+		<!-- SESSION ITENS -->
+        <section class="module">
+          <div class="container">
+            <div class="row">
+			
+				<div class="col-sm-8 col-sm-offset-2">
+					<h4 class="font-alt mb-0">Overview</h4>
+					<hr class="divider-w mt-10 mb-20">  
+					<div class="col-12">                    
+						<p>In this tutorial we will learn how to set up a position opening in the EA by setting signals. We should note that these settings are not an indication of operation, we are looking to understand how to assemble the signals so that from this understanding, we can create our own setups. The signals presented here in this tutorial will result in losses and should not be used on your real account.</p>
+					</div>				
+				</div>			
+				 
+				<div class="col-sm-8 col-sm-offset-2">
+					<h4 class="font-alt mb-0">Buy signal params &amp; Sell signal params</h4>
+					<hr class="divider-w mt-10 mb-20">  
+					<div class="col-12">                    
+						<p>The parameters below are used to create the operational signals. Here's a brief explanation of each of them:
+						<br>=&gt;input signal - Signal configuration for opening positions.
+						<br>=&gt;filter configuration - Configuration of the necessary precondition for an open signal to be valid.
+						<br>=&gt;output signal - Configuration of the exit condition of an operation, whether it is in a winning or losing condition.
+						<br>=&gt;stoploss price - Calculation configuration to obtain the stoploss position at the time of opening the position.
+						<br>=&gt;takeprofit price - Calculation configuration to obtain the takeprofit position at the time of opening the position.
+						</p>					
+					</div>				
+				</div> 			
+			
+				<div class="col-sm-8 col-sm-offset-2">
+					<h4 class="font-alt mb-0">LOGICAL OPERATORS</h4>
+					<hr class="divider-w mt-10 mb-20"> 													    
+					
+					<div class="row">
+						<div class="col-sm-2">+ - * /</div>
+						<div class="col-sm-10">
+						  Mathematical Operators						
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-sm-2">&gt;</div>
+						<div class="col-sm-10">Returns true when a value x is greater than y.</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">&gt;=</div>
+						<div class="col-sm-10">Returns true when x is greater than or equal to y.</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">&lt;</div>
+						<div class="col-sm-10">Returns true when x is less than y.</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">&lt;=</div>
+						<div class="col-sm-10">Returns true when x is less than or equal to y.</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">&amp;&amp;</div>
+						<div class="col-sm-10">Returns true when both operands are true.</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">or</div>
+						<div class="col-sm-10">Returns true when both operands are true.</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">==</div>
+						<div class="col-sm-10">Returns true when element is equal to another.</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">!=</div>
+						<div class="col-sm-10">Returns true when element is different from another.</div>
+					</div>
+					
+					<p></p><p>
+					More complex calculations or conditions must be kept within the indicators. If there is any need to obtain more complex values, please let us know so that we can study the situation, we are open to adjustments in the indicators or to meet any situation that makes it impossible to set up your configuration. The only configuration that is mandatory for the EA to operate automatically is the input configuration, the other configurations are optional, but obviously filling in the set of these configurations in sync is what we are looking for to create a setup.</p>					
+					<p>To learn this understanding, let's use the EURUSD symbol on the M15 timeframe.We will initially use the IKAMA indicator "Kaufman Adaptive Moving Average" to perform a configuration. By adding the indicator to the chart, we can observe the available buffers in the data window.</p>
+										
+					<div class="features-item"><img src="assets/images/tutorial/tutorialsample_1.png"/></div>
+					<p>IKAMA[1,0] = corresponds to the value of the short moving average of the previous candle.
+					<br>IKAMA[1,1] = corresponds to the value of the medium moving average of the previous candle.
+					<br>IKAMA[1,2] = corresponds to the value of the slow moving average of the previous candle.
+					</p>					
+					
+					<p>The IPRICE indicator provides the values ​​of conventional candles, heikin-ashi, digits and symbol points.</p>					
+					<div class="features-item"><img src="assets/images/tutorial/tutorialsample_2.png"/></div>
+										
+					<p>To obtain a value, we must inform two parameters. Example: IndicatorCode[x,y], where x is the candlestick number and y is the indicator buffer. The candle number equal to zero (0) corresponds to the last candle, that is, the current candle in practice. The number one candle (1) corresponds to the previous candle, and so on. Any value less than zero will be treated as zero. The indicator buffer number is the buffer that stores the information you want to get as a signal. If you try to read a non-existent buffer, the return will be zero(0).</p>
+					<p>Let's see in practice the assembly of the sign to simplify the understanding. Remember to use a demo account for this purpose and save your settings as soon as you see fit, that way you can load the settings into the strategy tester whenever you want without having to re-enter all the settings.</p>
+				</div>	
+
+				<div class="col-sm-8 col-sm-offset-2">
+					<h4 class="font-alt mb-0">INPUT </h4>
+					<hr class="divider-w mt-10 mb-20">  
+					<div class="col-12">        
+						<p>Let's create an entry signal when the price crosses the fast average of the IKAMA indicator for example.
+						<br>Buy input signal:  (IPRICE[1,3]&gt;IKAMA[1,0])&amp;&amp;(IPRICE[0,3]&lt;IKAMA[1,0])
+						<br>Sell input signal: (IPRICE[1,3]&lt;IKAMA[1,0])&amp;&amp;(IPRICE[0,3]&gt;IKAMA[1,0])
+						<br>StopLoss: 300 ticks
+						<br>TakeProfit: 300 ticks
+						<br>Run the strategy tester to view the result. Note that the EA makes the inputs as programmed.
+						</p>
+					</div>				
+				</div>
+				
+				<div class="col-sm-8 col-sm-offset-2">
+					<h4 class="font-alt mb-0">FILTER</h4>
+					<hr class="divider-w mt-10 mb-20">  
+					<div class="col-12">        
+						<p>The application of filters is used to tell the EA that a signal should only be selected if the filter is valid. In our example, we limit inputs when the three mobile media are oriented. We will enter in favor of the averages as follows:</p>
+						<p>Remembering that the tutorial of this tutorial is just to demonstrate some functionality, probably as inputs will present good results in some moments, as well as bad results in others. The use of other indicators like Stochastic, RSI and ATR are very useful to eliminate unwanted moments from the settings. Creating a setup requires time, dedication and analysis of the symbol you want to trade a lot. The same study configuration will probably not work for all your symbols, as each one may have its specific characteristics and this can develop our EA with the necessary flexibility for you to make your operations automatic.</p>
+						
+						<br>Buy input signal:  (IPRICE[1,3]&gt;IKAMA[1,0])&amp;&amp;(IPRICE[0,3]&lt;IKAMA[1,0])
+						<br>Buy filter configuration:  (IKAMA[1,2]&lt;IKAMA[1,1])&amp;&amp;(IKAMA[1,1]&lt;IKAMA[1,0])
+						<br>Sell input signal: (IPRICE[1,3]&lt;IKAMA[1,0])&amp;&amp;(IPRICE[0,3]&gt;IKAMA[1,0])
+						<br>Sell filter configuration: (IKAMA[1,2]&gt;IKAMA[1,1])&amp;&amp;(IKAMA[1,1]&gt;IKAMA[1,0])
+						
+						<p>Run the strategy tester to preview the result. Please note that the EA will only enter the buy when the averages are superimposed on each other.</p>
+					</div>				
+				</div>
+				
+				<div class="col-sm-8 col-sm-offset-2">
+					<h4 class="font-alt mb-0">OUTPUT</h4>
+					<hr class="divider-w mt-10 mb-20">  
+					<div class="col-12">        
+						<p>We can also set up a signal for the EA to close its position. Regardless of the position's financial status, the EA will close the trade when this signal occurs.</p>
+					</div>				
+				</div>
+				
+				<div class="col-sm-8 col-sm-offset-2">
+					<h4 class="font-alt mb-0">STOPLOSS &amp;&amp; TAKEPROFIT PRICE</h4>
+					<hr class="divider-w mt-10 mb-20">  
+					<div class="col-12">        
+						<p>In these settings, we look for a value to perform the stoploss and/or takeprofit positioning. Regardless of whether or not you have set a fixed value for stoploss and takeprofit placement, when filled in, the EA will use the calculated value in this setting, ignoring the default values. Let's use a position opening using the Fibonacci indicator to exemplify the use of these parameters.
+						</p>
+						<p>Buy signals 
+						<br>=&gt;input signal:	(IPRICE[0,3]&lt;IFIBO[1,3]) &amp;&amp; (IPRICE[0,3]&gt;IFIBO[1,5]) &amp;&amp; (IPRICE[0,3]&gt;IPRICE[1,1])			
+						<br>=&gt;filter configuration: (IFIBO[1,0]&gt;IFIBO[1,5])
+						<br>=&gt;output signal					
+						<br>=&gt;stoploss price: IFIBO[1,6]		
+						<br>=&gt;takeprofit price: IFIBO[1,0]		
+						</p>
+						<p>Sell signals 
+						<br>=&gt;input signal: (IPRICE[0,3]&gt;IFIBO[1,3]) &amp;&amp; (IPRICE[0,3]&lt;IFIBO[1,5]) &amp;&amp; (IPRICE[0,3]&lt;IPRICE[1,2])
+						<br>=&gt;filter configuration: (IFIBO[1,0]&lt;IFIBO[1,5])
+						<br>=&gt;output signal					
+						<br>=&gt;stoploss price: IFIBO[1,6]		
+						<br>=&gt;takeprofit price: IFIBO[1,0]		
+						</p>
+					</div>				
+				</div>
+				<div class="features-item"><img src="assets/images/tutorial/tutorialsample_3.png"/></div>
+				
+				<div class="col-sm-8 col-sm-offset-2">
+					<h4 class="font-alt mb-0">SIGNAL FOR ACTIVATION OF AUTOMATION</h4>
+					<hr class="divider-w mt-10 mb-20">  
+					<div class="col-12">        
+						<p>After a trade ends, we can wait for a signal to occur before a new entry is executed. Some setups such as Keltner channel, when closing a position, to enter a new position we must wait for the price to return to the central average of the indicator.<p>
+						<p>Configure this signal when you need to lock the inputs until a certain event occurs. You can also choose to start the EA waiting for the signal in order to avoid market opening gap entries.</p>
+					</div>				
+				</div>				
+			</div>		
+			
+        </section>
+				
+        <hr class="divider-d">
+        <footer class="footer bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="copyright font-alt">&copy; 2022&nbsp;<a href="index.html">Cybertrade</a>, All Rights Reserved</p>
+              </div>     
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>      
+    </main>
+    <!-- JavaScripts
+    ============================================= -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>    
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

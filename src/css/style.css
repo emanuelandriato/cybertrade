@@ -1,0 +1,105 @@
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+#titulo{
+    background: #6959CD;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px;
+}
+p.normal {
+  font-weight: normal;
+}
+p.thick {
+  font-weight: bold;
+}
+
+tr > td:first-child{
+ font-weight: 600;
+}
+
+table td, table th {
+  padding-left: 6px;  
+}
+table thead tr {
+  height: 50px;
+  background: #B0C4DE;
+  font-size: 16px;
+}
+table tbody tr {
+  height: 60px;
+  border-bottom: 1px solid #B0C4DE;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+@media screen and (max-width: 35.5em) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 8px 0;	
+  }
+  table tbody tr td {
+    padding-left: 45%;
+    margin-bottom: 12px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    position: absolute;
+    font-weight: 700;
+    width: 40%;
+    left: 10px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Nome";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Descrição";
+  }
+}
+body {
+  background: #F5FFFA;
+  font: 400 14px 'Arial','Arial';  
+  padding: 20px;
+}
+
+blockquote {
+  color: white;
+  text-align: center;
+}
